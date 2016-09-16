@@ -17,7 +17,7 @@
 # set -x verbose
 
 # Set a space-separated list of tenant identifiers below:
-TENANTS+=(core)
+TENANTS+=(pbm)
 
 # Set space-separated lists of MIME types and their corresponding
 # MIME type labels, below:
@@ -96,7 +96,7 @@ DEFAULT_ADMIN_ACCTS+=()
 let ACCT_COUNTER=1
 for tenant in ${TENANTS[*]}
 do
-  DEFAULT_ADMIN_ACCTS[ACCT_COUNTER]="admin@$tenant.collectionspace.org"
+  DEFAULT_ADMIN_ACCTS[ACCT_COUNTER]="admin@pacificbonsaimuseum.org"
   let ACCT_COUNTER++
 done
 
